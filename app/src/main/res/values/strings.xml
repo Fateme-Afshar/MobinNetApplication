@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">MobinNetApplication</string>
+    <string name="password">گذر واژه</string>
+    <string name="phone_number">تلفن همراه</string>
+    <string name="entry">ورود</string>
+    <string name="sign_up">ثبت نام کنید</string>
 </resources>

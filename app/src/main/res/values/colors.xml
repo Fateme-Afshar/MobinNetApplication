@@ -9,4 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     
     <color name="white_smoke">#F5F5F5</color>
+    <color name="green">#00AD4C</color>
+    <color name="dark_green">#013C0B</color>
+    <color name="light_green">#00AD4C</color>
+    <color name="so_light_green">#73BF43</color>
+    <color name="evening_sea">#045453</color>
+    <color name="green_yellow">#1FF822</color>
+    <color name="so_light_blue">#E1E6EF</color>
 </resources>
