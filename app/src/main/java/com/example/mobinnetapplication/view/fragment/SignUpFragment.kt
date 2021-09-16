@@ -6,20 +6,17 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import com.example.mobinnetapplication.R
-import com.example.mobinnetapplication.databinding.FragmentLoginBinding
+import com.example.mobinnetapplication.databinding.FragmentSignUpBinding
 
-class LoginFragment : BaseFragment() {
-    private lateinit var binding: FragmentLoginBinding
+class SignUpFragment : BaseFragment() {
+        private lateinit var binding:FragmentSignUpBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
-        binding.tvSignUp.setOnClickListener {
-            callbacks.openSignUpFragment()
-        }
+        binding=DataBindingUtil.inflate(inflater, R.layout.fragment_sign_up,container,false)
         return binding.root
     }
 }

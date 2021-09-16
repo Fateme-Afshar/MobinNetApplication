@@ -6,18 +6,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white_smoke">
+
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imv_logo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/mobinio"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="64dp"/>
+            android:layout_marginTop="48dp"
+            android:src="@drawable/mobinio" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imv_phone"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:maxHeight="150dp"
             android:layout_below="@id/imv_logo"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="8dp"
@@ -26,7 +28,7 @@
        <LinearLayout
            android:id="@+id/layout_info"
            android:layout_width="match_parent"
-           android:layout_height="160dp"
+           android:layout_height="150dp"
            android:layout_marginTop="15dp"
            android:background="@drawable/bg_shadow_rounded"
            android:layout_below="@+id/imv_phone"
@@ -43,7 +45,7 @@
                android:layout_marginTop="5dp"
                android:hint="@string/phone_number"
                android:textColorHint="@color/evening_sea"
-               app:endIconDrawable="@drawable/mobile_phone"
+               app:endIconDrawable="@drawable/ic_mobile_phone"
                app:endIconContentDescription="phone img"
                app:endIconMode="custom"
                app:endIconTint="@color/light_green"
@@ -70,7 +72,7 @@
                app:startIconTint="@color/dark_green"
                android:hint="@string/password"
                android:textColorHint="@color/evening_sea"
-               app:endIconDrawable="@drawable/key"
+               app:endIconDrawable="@drawable/ic_password"
                app:endIconContentDescription="key img"
                app:endIconMode="custom"
                app:endIconTint="@color/light_green"
@@ -104,9 +106,9 @@
             android:layout_marginEnd="24dp"
             android:layout_marginBottom="8dp"
             android:background="@drawable/ripple_btn"
-            android:text="@string/entry"
             android:drawableStart="@drawable/ic_backspace"
             android:paddingStart="24dp"
+            android:text="@string/entry"
             android:textColor="@color/white" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -115,8 +117,7 @@
             android:layout_height="wrap_content"
             android:text="@string/sign_up"
             android:layout_below="@+id/btn_submit"
-            android:layout_alignStart="@+id/btn_submit"
-            />
+            android:layout_alignStart="@+id/btn_submit" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:layout_width="wrap_content"

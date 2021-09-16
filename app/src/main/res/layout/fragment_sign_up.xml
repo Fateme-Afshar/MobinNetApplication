@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white_smoke">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imv_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:src="@drawable/mobinio"
+            android:layout_gravity="center" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxHeight="200dp"
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_phone" />
+
+
+        <LinearLayout
+            android:id="@+id/layout_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/bg_shadow_rounded"
+            android:layout_marginEnd="32dp"
+            android:layout_marginStart="32dp"
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconTint="@color/dark_green"
+                android:hint="@string/name_family"
+                android:textColorHint="@color/evening_sea"
+                app:endIconDrawable="@drawable/ic_person"
+                app:endIconContentDescription="key img"
+                app:endIconMode="custom"
+                app:endIconTint="@color/light_green"
+                app:hintTextColor="@color/green_yellow"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/line" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:id="@+id/input_layout_phone"
+                android:layout_width="match_parent"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="5dp"
+                android:hint="@string/phone_number"
+                android:textColorHint="@color/evening_sea"
+                app:endIconDrawable="@drawable/ic_mobile_phone"
+                app:endIconContentDescription="phone img"
+                app:endIconMode="custom"
+                app:endIconTint="@color/light_green"
+                app:hintTextColor="@color/green_yellow"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/line" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconCheckable="true"
+                app:startIconDrawable="@drawable/ic_eye"
+                app:startIconTint="@color/dark_green"
+                android:hint="@string/password"
+                android:textColorHint="@color/evening_sea"
+                app:endIconDrawable="@drawable/ic_password"
+                app:endIconContentDescription="key img"
+                app:endIconMode="custom"
+                app:endIconTint="@color/light_green"
+                app:hintTextColor="@color/green_yellow"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@drawable/line" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:startIconCheckable="true"
+                app:startIconDrawable="@drawable/ic_eye"
+                app:startIconTint="@color/dark_green"
+                android:hint="@string/repeat_pass"
+                android:textColorHint="@color/evening_sea"
+                app:endIconDrawable="@drawable/ic_password"
+                app:endIconContentDescription="key img"
+                app:endIconMode="custom"
+                app:endIconTint="@color/light_green"
+                app:hintTextColor="@color/green_yellow"
+                android:layout_marginBottom="5dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/ripple_btn"
+            android:drawableStart="@drawable/ic_backspace"
+            android:paddingStart="24dp"
+            android:text="@string/entry"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</layout>

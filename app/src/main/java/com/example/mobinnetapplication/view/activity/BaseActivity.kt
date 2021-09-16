@@ -5,9 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.mobinnetapplication.R
 import com.example.mobinnetapplication.databinding.ActivityBaseBinding
+import com.example.mobinnetapplication.view.Callbacks
 import com.example.mobinnetapplication.view.fragment.LoginFragment
+import com.example.mobinnetapplication.view.fragment.SignUpFragment
 
-class BaseActivity : AppCompatActivity() {
+class BaseActivity : AppCompatActivity(), Callbacks {
     private lateinit var binding: ActivityBaseBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,8 +19,15 @@ class BaseActivity : AppCompatActivity() {
         val fragment = supportFragmentManager.findFragmentById(R.id.fragment_container)
 
         if (fragment == null)
-            supportFragmentManager.beginTransaction().
-            add(R.id.fragment_container, LoginFragment())
+            supportFragmentManager.beginTransaction().add(R.id.fragment_container, LoginFragment())
                 .commit()
+    }
+
+    override fun openSignUpFragment() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container,SignUpFragment())
+            .addToBackStack(LoginFragment()::class.simpleName)
+            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out).
+            commit()
     }
 }
