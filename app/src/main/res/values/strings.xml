@@ -6,4 +6,6 @@
     <string name="sign_up">ثبت نام کنید</string>
     <string name="repeat_pass">تکرار گذر واژه</string>
     <string name="name_family">نام و نام خانوادگی</string>
+    <string name="filter">فیلتر</string>
+    <string name="show_all">نمایش همه</string>
 </resources>

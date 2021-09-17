@@ -7,6 +7,7 @@ import com.example.mobinnetapplication.R
 import com.example.mobinnetapplication.databinding.ActivityBaseBinding
 import com.example.mobinnetapplication.view.Callbacks
 import com.example.mobinnetapplication.view.fragment.LoginFragment
+import com.example.mobinnetapplication.view.fragment.MainCloudySpaceFragment
 import com.example.mobinnetapplication.view.fragment.SignUpFragment
 
 class BaseActivity : AppCompatActivity(), Callbacks {
@@ -27,6 +28,13 @@ class BaseActivity : AppCompatActivity(), Callbacks {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container,SignUpFragment())
             .addToBackStack(LoginFragment()::class.simpleName)
+            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out).
+            commit()
+    }
+
+    override fun openMainCloudySpaceFragment() {
+        supportFragmentManager.beginTransaction()
+            .replace(R.id.fragment_container,MainCloudySpaceFragment())
             .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out).
             commit()
     }

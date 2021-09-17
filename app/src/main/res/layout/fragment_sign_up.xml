@@ -94,9 +94,6 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:startIconCheckable="true"
-                app:startIconDrawable="@drawable/ic_eye"
-                app:startIconTint="@color/dark_green"
                 android:hint="@string/password"
                 android:textColorHint="@color/evening_sea"
                 app:endIconDrawable="@drawable/ic_password"
@@ -111,7 +108,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/white" />
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
             <View
@@ -123,9 +122,6 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:startIconCheckable="true"
-                app:startIconDrawable="@drawable/ic_eye"
-                app:startIconTint="@color/dark_green"
                 android:hint="@string/repeat_pass"
                 android:textColorHint="@color/evening_sea"
                 app:endIconDrawable="@drawable/ic_password"
@@ -140,7 +136,9 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="@color/white" />
+                    android:background="@color/white"
+                    android:inputType="textPassword"
+                    />
             </com.google.android.material.textfield.TextInputLayout>
 
         </LinearLayout>

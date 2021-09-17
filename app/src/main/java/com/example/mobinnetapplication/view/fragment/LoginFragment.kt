@@ -17,9 +17,16 @@ class LoginFragment : BaseFragment() {
         savedInstanceState: Bundle?
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_login, container, false)
+        onClicks()
+        return binding.root
+    }
+
+    private fun onClicks() {
         binding.tvSignUp.setOnClickListener {
             callbacks.openSignUpFragment()
         }
-        return binding.root
+        binding.btnSubmit.setOnClickListener {
+            callbacks.openMainCloudySpaceFragment()
+        }
     }
 }
