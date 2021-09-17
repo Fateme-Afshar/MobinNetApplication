@@ -1,6 +1,7 @@
 package com.example.mobinnetapplication.view.activity
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import com.example.mobinnetapplication.R
@@ -22,6 +23,7 @@ class BaseActivity : AppCompatActivity(), Callbacks {
         if (fragment == null)
             supportFragmentManager.beginTransaction().add(R.id.fragment_container, LoginFragment())
                 .commit()
+
     }
 
     override fun openSignUpFragment() {
@@ -33,6 +35,9 @@ class BaseActivity : AppCompatActivity(), Callbacks {
     }
 
     override fun openMainCloudySpaceFragment() {
+        binding.toolbar.visibility=View.VISIBLE
+        binding.bottomNav.visibility=View.VISIBLE
+        binding.bottomNav.menu.getItem(1).isChecked = true
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container,MainCloudySpaceFragment())
             .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out).

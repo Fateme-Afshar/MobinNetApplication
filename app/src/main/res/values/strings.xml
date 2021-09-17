@@ -8,4 +8,8 @@
     <string name="name_family">نام و نام خانوادگی</string>
     <string name="filter">فیلتر</string>
     <string name="show_all">نمایش همه</string>
+    <string name="home">خانه</string>
+    <string name="cloudy_space">فضای ابری</string>
+    <string name="cameras">دوربین ها</string>
+    <string name="account">حساب کاربری</string>
 </resources>
