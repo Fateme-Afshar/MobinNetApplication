@@ -22,7 +22,7 @@ class BaseActivity : AppCompatActivity(), Callbacks {
 
         if (fragment == null)
             supportFragmentManager.beginTransaction().add(R.id.fragment_container, LoginFragment())
-                .commit()
+                .setCustomAnimations(R.anim.fade,R.anim.fade).commit()
 
     }
 
@@ -30,17 +30,18 @@ class BaseActivity : AppCompatActivity(), Callbacks {
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container,SignUpFragment())
             .addToBackStack(LoginFragment()::class.simpleName)
-            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out).
+            .setCustomAnimations(R.anim.fade, R.anim.fade).
             commit()
     }
 
     override fun openMainCloudySpaceFragment() {
-        binding.toolbar.visibility=View.VISIBLE
-        binding.bottomNav.visibility=View.VISIBLE
         binding.bottomNav.menu.getItem(1).isChecked = true
         supportFragmentManager.beginTransaction()
             .replace(R.id.fragment_container,MainCloudySpaceFragment())
-            .setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out).
+            .setCustomAnimations(R.anim.fade,R.anim.fade).
             commit()
+
+        binding.toolbar.visibility=View.VISIBLE
+        binding.bottomNav.visibility=View.VISIBLE
     }
 }
