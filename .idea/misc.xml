@@ -15,6 +15,7 @@
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/bg_rounded_30.xml" value="0.206" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/bg_shadow_rounded.xml" value="0.206" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/bg_shadow_rounded_30.xml" value="0.206" />
+        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/bg_solid_light_gray_rounded_30.xml" value="0.1965" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/bg_white_rounded_15.xml" value="0.206" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/bg_white_rounded_8.xml" value="0.203" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ic_cloud.xml" value="0.203" />
@@ -30,12 +31,13 @@
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/line.xml" value="0.206" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/line_gray.xml" value="0.206" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ripple_btn.xml" value="0.206" />
+        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ripple_lirht.xml" value="0.1965" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/activity_base.xml" value="0.264" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/activity_main.xml" value="0.2557291666666667" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/fragment_cloudy_space.xml" value="0.4" />
-        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/fragment_login.xml" value="0.176" />
+        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/fragment_login.xml" value="0.264" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/fragment_main_cloudy_space.xml" value="0.2557291666666667" />
-        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/fragment_sign_up.xml" value="0.12" />
+        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/fragment_sign_up.xml" value="0.4" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/item_cloudy_space.xml" value="0.264" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/menu/main_menu.xml" value="0.2520833333333333" />
       </map>

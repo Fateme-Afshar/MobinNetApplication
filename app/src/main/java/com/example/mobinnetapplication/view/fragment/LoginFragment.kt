@@ -22,9 +22,9 @@ class LoginFragment : BaseFragment() {
     }
 
     private fun onClicks() {
-/*        binding.tvSignUp.setOnClickListener {
+      binding.btnSignUp.setOnClickListener {
             callbacks.openSignUpFragment()
-        }*/
+        }
         binding.btnSubmit.setOnClickListener {
             callbacks.openMainCloudySpaceFragment()
         }

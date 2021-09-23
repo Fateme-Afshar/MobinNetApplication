@@ -15,6 +15,7 @@
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
             android:src="@drawable/mobinio"
+            android:layout_marginTop="16dp"
             app:layout_constraintBottom_toTopOf="@+id/imv_phone"
             app:layout_constraintEnd_toEndOf="@+id/imv_phone"
             app:layout_constraintStart_toStartOf="@+id/imv_phone"
@@ -65,7 +66,6 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.CustomStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="@string/phone_number"
             android:layout_marginTop="16dp"
             android:background="@drawable/bg_border_borrom_top_rounded"
             app:endIconContentDescription="phone img"
@@ -76,7 +76,11 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white" />
+                android:background="@color/white"
+                android:inputType="numberDecimal"
+                android:hint="@string/phone_number"
+                app:contentPaddingRight="16dp"
+                />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -144,24 +148,15 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent="0.9" />
 
-        <com.google.android.material.textview.MaterialTextView
-            android:id="@+id/tv_sign_up"
-            android:layout_width="wrap_content"
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_sign_up"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:background="@drawable/ripple_light"
+            android:drawableEnd="@drawable/ic_sign_up"
+            android:drawablePadding="16dp"
             android:text="@string/sign_up"
-            android:textColor="@color/evening_sea"
             app:layout_constraintStart_toStartOf="@+id/btn_submit"
             app:layout_constraintTop_toBottomOf="@+id/btn_submit" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/appCompatImageView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginLeft="5dp"
-            android:src="@drawable/ic_sign_up"
-            app:layout_constraintStart_toEndOf="@+id/tv_sign_up"
-            app:layout_constraintTop_toTopOf="@+id/tv_sign_up" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
