@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:textSize="15sp"
+            android:textColor="@color/gray_blue"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_name"
+            app:layout_constraintEnd_toEndOf="@+id/tv_name"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textSize="15sp"
+            android:text="@string/name"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/bg_border_light_gray_20"
+            app:layout_constraintBottom_toTopOf="@+id/title_email"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/email"
+            android:textColor="@color/gray_blue"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@id/tv_email"
+            app:layout_constraintEnd_toEndOf="@+id/tv_email"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_light_gray_20"
+            android:padding="16dp"
+            android:text="@string/email"
+            android:textSize="15sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@id/title_phone"
+            app:layout_constraintTop_toBottomOf="@+id/title_email" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/phone"
+            android:textColor="@color/gray_blue"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_phone"
+            app:layout_constraintEnd_toEndOf="@+id/tv_phone"
+            app:layout_constraintTop_toBottomOf="@+id/tv_email" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_light_gray_20"
+            android:padding="16dp"
+            android:text="@string/phone"
+            android:textSize="15sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@id/title_national_code"
+            app:layout_constraintTop_toBottomOf="@+id/title_phone" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_national_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/national_code"
+            android:textColor="@color/gray_blue"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_national_code"
+            app:layout_constraintEnd_toEndOf="@+id/tv_national_code"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_national_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_light_gray_20"
+            android:padding="16dp"
+            android:text="@string/national_code"
+            android:textSize="15sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@id/title_town"
+            app:layout_constraintTop_toBottomOf="@+id/title_national_code" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_town"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/town"
+            android:textColor="@color/gray_blue"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_town"
+            app:layout_constraintEnd_toEndOf="@+id/tv_town"
+            app:layout_constraintTop_toBottomOf="@+id/tv_national_code" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_town"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_light_gray_20"
+            android:padding="16dp"
+            android:text="@string/town"
+            android:textSize="15sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/title_city"
+            app:layout_constraintTop_toBottomOf="@+id/title_town" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:textColor="@color/gray_blue"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_city"
+            app:layout_constraintEnd_toEndOf="@+id/tv_city"
+            app:layout_constraintTop_toBottomOf="@+id/tv_town" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_light_gray_20"
+            android:padding="16dp"
+            android:text="@string/city"
+            android:textSize="15sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_organize"
+            app:layout_constraintTop_toBottomOf="@+id/title_city" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/title_organize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/city"
+            android:textColor="@color/gray_blue"
+            android:textSize="15sp"
+            android:layout_marginEnd="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_organize"
+            app:layout_constraintEnd_toEndOf="@+id/tv_organize"
+            app:layout_constraintTop_toBottomOf="@+id/tv_city" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tv_organize"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border_light_gray_20"
+            android:padding="16dp"
+            android:text="@string/city"
+            android:textSize="15sp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_organize" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

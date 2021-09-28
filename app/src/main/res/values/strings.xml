@@ -15,4 +15,15 @@
     <string name="title">عنوان</string>
     <string name="hint_date">زمان ایجاد:۱۴۰۰/۰۲/۲۱  ۱۱:۲۰:۴۰.۵۸۷</string>
     <string name="explain">توضیحات</string>
+    <string name="sort">چیدمان</string>
+    <string name="alone">تکی</string>
+    <string name="two_category">دو تایی</string>
+    <string name="three_category">سه تایی</string>
+    <string name="four_category">چهار تایی</string>
+    <string name="name">نام و نام خانوادگی</string>
+    <string name="email">ایمیل</string>
+    <string name="phone">موبایل</string>
+    <string name="national_code">کد ملی</string>
+    <string name="town">استان</string>
+    <string name="city">محله</string>
 </resources>
