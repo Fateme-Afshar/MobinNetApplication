@@ -19,6 +19,10 @@
             android:textSize="15sp"
             android:textColor="@color/gray_blue"
             android:layout_marginEnd="5dp"
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintBottom_toTopOf="@+id/tv_name"
             app:layout_constraintEnd_toEndOf="@+id/tv_name"
             app:layout_constraintTop_toTopOf="parent" />
@@ -30,6 +34,8 @@
             android:padding="16dp"
             android:textSize="15sp"
             android:text="@string/name"
+            app:autoSizeTextType="uniform"
+            app:autoSizePresetSizes="@array/autosize_text_sizes"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
             android:background="@drawable/bg_border_light_gray_20"
@@ -160,7 +166,7 @@
             android:textSize="15sp"
             android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_organize"
+            app:layout_constraintBottom_toTopOf="@+id/title_organize"
             app:layout_constraintTop_toBottomOf="@+id/title_city" />
 
         <com.google.android.material.textview.MaterialTextView
@@ -171,6 +177,8 @@
             android:textColor="@color/gray_blue"
             android:textSize="15sp"
             android:layout_marginEnd="5dp"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintBottom_toTopOf="@+id/tv_organize"
             app:layout_constraintEnd_toEndOf="@+id/tv_organize"
             app:layout_constraintTop_toBottomOf="@+id/tv_city" />
@@ -183,11 +191,13 @@
             android:padding="16dp"
             android:text="@string/city"
             android:textSize="15sp"
-            android:layout_marginEnd="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title_organize" />
+            app:layout_constraintTop_toBottomOf="@+id/title_organize"
+            tools:layout_editor_absoluteX="16dp" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

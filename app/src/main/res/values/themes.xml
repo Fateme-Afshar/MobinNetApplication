@@ -46,4 +46,22 @@
         <item name="android:clickable">true</item>
         <item name="android:background">@drawable/ripple_light</item>
     </style>
+
+    <style name="Widget.MaterialComponents.Button.TextButton.MaterialBtnStyle">
+        <item name="android:background">@drawable/ripple_light</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="iconGravity">end</item>
+        <item name="iconSize">25dp</item>
+        <item name="iconTint">@color/gray</item>
+        <item name="iconPadding">8dp</item>
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizePresetSizes">@array/autosize_text_sizes</item>
+        <item name="android:textColor">@color/light_gray</item>
+    </style>
+
+    <style name="MainTextStyle">
+        <item name="autoSizeTextType">uniform</item>
+        <item name="autoSizePresetSizes">@array/autosize_text_sizes</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
 </resources>

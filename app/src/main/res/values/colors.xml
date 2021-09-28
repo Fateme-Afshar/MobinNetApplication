@@ -20,5 +20,6 @@
     <color name="light_gray">#9E9C9C</color>
     <color name="gray_blue">#60788F</color>
     <color name="dark_gray">#333333</color>
+    <color name="gray">#4f4e4e</color>
     <color name="android_green">#A6CE39</color>
 </resources>

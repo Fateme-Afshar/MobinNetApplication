@@ -79,8 +79,7 @@ class BaseActivity : AppCompatActivity(), Callbacks {
 
     override fun openLayoutCategoryFragment(requestCode:Int,tag:String) {
         val layoutCategoryFragment=LayoutCategoryFragment()
-        val fragmentTransaction=supportFragmentManager.beginTransaction()
-            .replace(R.id.fragment_container,LayoutCategoryFragment())
-        layoutCategoryFragment.show(fragmentTransaction,tag)
+
+        layoutCategoryFragment.show(supportFragmentManager,tag)
     }
 }
