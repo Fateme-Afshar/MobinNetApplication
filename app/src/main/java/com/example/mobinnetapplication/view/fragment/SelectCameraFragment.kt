@@ -5,28 +5,27 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.recyclerview.widget.GridLayoutManager
+import androidx.fragment.app.DialogFragment
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.mobinnetapplication.R
-import com.example.mobinnetapplication.adapter.CloudySpaceItemAdapter
-import com.example.mobinnetapplication.databinding.FragmentCloudySpaceBinding
+import com.example.mobinnetapplication.adapter.ItemsCameraAdapter
+import com.example.mobinnetapplication.databinding.FragmentSelectCameraBinding
 
-class CloudySpaceFragment : BaseFragment() {
-    private lateinit var binding: FragmentCloudySpaceBinding
+class SelectCameraFragment : DialogFragment() {
+    private lateinit var binding: FragmentSelectCameraBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        binding =
-            DataBindingUtil.inflate(inflater, R.layout.fragment_cloudy_space, container, false)
+        binding = DataBindingUtil.inflate(inflater, R.layout.fragment_select_camera, container, false)
         setupAdapter()
         return binding.root
     }
 
-    private fun setupAdapter() {
-        val adapter=CloudySpaceItemAdapter(arrayListOf())
+    private fun setupAdapter(){
+        val adapter=ItemsCameraAdapter(arrayListOf())
 
         binding.recyclerView.apply {
             this.adapter=adapter

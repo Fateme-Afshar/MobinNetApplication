@@ -12,6 +12,8 @@ import com.example.mobinnetapplication.uiUtils.UiStyle
 
 class HomePageFragment : BaseFragment() {
     private lateinit var binding:FragmentHomePageBinding
+    private val categoryTag="selectionLayerStyle"
+    private val categoryPartTag="categoryPartTag"
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -20,53 +22,54 @@ class HomePageFragment : BaseFragment() {
     ): View {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home_page, container, false)
         binding.fragment = this
+        receiveResult()
+        return binding.root
+    }
+
+    private fun receiveResult() {
         requireActivity().supportFragmentManager.setFragmentResultListener(
             "1",
-            requireActivity(),
-            object : FragmentResultListener {
-                override fun onFragmentResult(requestKey: String, result: Bundle) {
-                    when (result["rowStyle"]) {
-                        UiStyle.ALONE.ordinal -> {
-                            setupVisibility(View.VISIBLE, View.GONE, View.GONE, View.GONE, 1f)
-                        }
-                        UiStyle.TWO_HORIZONTAL.ordinal -> {
-                            setupVisibility(View.VISIBLE, View.GONE, View.VISIBLE, View.GONE, 0.53f)
-                        }
-                        UiStyle.TWO_VERTICAL.ordinal -> {
-                            setupVisibility(View.VISIBLE, View.VISIBLE, View.GONE, View.GONE, 1f)
-                        }
-                        UiStyle.THREE_BIG_TOP.ordinal -> {
-                            setupVisibility(
-                                View.GONE,
-                                View.VISIBLE,
-                                View.VISIBLE,
-                                View.VISIBLE,
-                                0.53f
-                            )
-                        }
-                        UiStyle.THREE_BIG_BOTTOM.ordinal -> {
-                            setupVisibility(
-                                View.VISIBLE,
-                                View.VISIBLE,
-                                View.GONE,
-                                View.VISIBLE,
-                                0.53f
-                            )
-                        }
-                        UiStyle.FOUR_IN_ROW.ordinal -> {
-                            setupVisibility(
-                                View.VISIBLE,
-                                View.VISIBLE,
-                                View.VISIBLE,
-                                View.VISIBLE,
-                                0.53f
-                            )
-                        }
-                    }
+            requireActivity()
+        ) { _, result ->
+            when (result["rowStyle"]) {
+                UiStyle.ALONE.ordinal -> {
+                    setupVisibility(View.VISIBLE, View.GONE, View.GONE, View.GONE, 1f)
                 }
-
-            })
-        return binding.root
+                UiStyle.TWO_HORIZONTAL.ordinal -> {
+                    setupVisibility(View.VISIBLE, View.GONE, View.VISIBLE, View.GONE, 0.53f)
+                }
+                UiStyle.TWO_VERTICAL.ordinal -> {
+                    setupVisibility(View.VISIBLE, View.VISIBLE, View.GONE, View.GONE, 1f)
+                }
+                UiStyle.THREE_BIG_TOP.ordinal -> {
+                    setupVisibility(
+                        View.GONE,
+                        View.VISIBLE,
+                        View.VISIBLE,
+                        View.VISIBLE,
+                        0.53f
+                    )
+                }
+                UiStyle.THREE_BIG_BOTTOM.ordinal -> {
+                    setupVisibility(
+                        View.VISIBLE,
+                        View.VISIBLE,
+                        View.GONE,
+                        View.VISIBLE,
+                        0.53f
+                    )
+                }
+                UiStyle.FOUR_IN_ROW.ordinal -> {
+                    setupVisibility(
+                        View.VISIBLE,
+                        View.VISIBLE,
+                        View.VISIBLE,
+                        View.VISIBLE,
+                        0.53f
+                    )
+                }
+            }
+        }
     }
 
     private fun setupVisibility(
@@ -92,6 +95,10 @@ class HomePageFragment : BaseFragment() {
     }
 
     fun onCategoryImvClickListener() {
-        callbacks.openLayoutCategoryFragment(1, "selectionLayerStyle")
+        callbacks.openLayoutCategoryFragment(1, categoryTag)
+    }
+
+    fun onCategoryPartBtnClickListener(){
+        callbacks.openItemCameraFragment(categoryPartTag)
     }
 }

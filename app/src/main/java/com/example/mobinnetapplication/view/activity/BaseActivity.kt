@@ -82,4 +82,10 @@ class BaseActivity : AppCompatActivity(), Callbacks {
 
         layoutCategoryFragment.show(supportFragmentManager,tag)
     }
+
+    override fun openItemCameraFragment(tag:String) {
+        val selectCameraFragment=SelectCameraFragment()
+
+        selectCameraFragment.show(supportFragmentManager,tag)
+    }
 }

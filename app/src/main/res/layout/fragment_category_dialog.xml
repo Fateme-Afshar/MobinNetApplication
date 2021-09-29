@@ -15,8 +15,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/bg_white_rounded_8"
         android:elevation="10dp"
-        android:layout_margin="24dp"
-        >
+        android:layout_margin="24dp">
 
         <com.google.android.material.textview.MaterialTextView
             android:id="@+id/title_category"
@@ -42,22 +41,26 @@
             style="@style/Widget.MaterialComponents.Button.TextButton.MaterialBtnStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{()->fragment.sendResult(UiStyle.ALONE)}"
             android:text="@string/alone"
             app:icon="@drawable/ic_alone"
-            android:onClick="@{()->fragment.sendResult(UiStyle.ALONE)}"
-            app:layout_constraintVertical_chainStyle="spread"
             app:layout_constraintBottom_toTopOf="@+id/btn_two_part_big_vertical"
-            app:layout_constraintTop_toBottomOf="@id/title_category" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_category"
+            app:layout_constraintVertical_chainStyle="spread" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_two_part_big_vertical"
             style="@style/Widget.MaterialComponents.Button.TextButton.MaterialBtnStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{()->fragment.sendResult(UiStyle.TWO_VERTICAL)}"
             android:text="@string/two_category"
             app:icon="@drawable/ic_two_part_big_vertical"
-            android:onClick="@{()->fragment.sendResult(UiStyle.TWO_VERTICAL)}"
             app:layout_constraintBottom_toTopOf="@+id/btn_two_part_big_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_alone" />
 
         <com.google.android.material.button.MaterialButton
@@ -65,10 +68,12 @@
             style="@style/Widget.MaterialComponents.Button.TextButton.MaterialBtnStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{()->fragment.sendResult(UiStyle.TWO_HORIZONTAL)}"
             android:text="@string/two_category"
             app:icon="@drawable/ic_two_part_big_horizontal"
-            android:onClick="@{()->fragment.sendResult(UiStyle.TWO_HORIZONTAL)}"
             app:layout_constraintBottom_toTopOf="@+id/btn_three_part_big_top_part"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_two_part_big_vertical" />
 
         <com.google.android.material.button.MaterialButton
@@ -76,22 +81,25 @@
             style="@style/Widget.MaterialComponents.Button.TextButton.MaterialBtnStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{()->fragment.sendResult(UiStyle.THREE_BIG_TOP)}"
             android:text="@string/three_category"
             app:icon="@drawable/ic_three_part_big_top_part"
-            android:onClick="@{()->fragment.sendResult(UiStyle.THREE_BIG_TOP)}"
             app:layout_constraintBottom_toTopOf="@+id/btn_three_part_big_bottom_part"
-            app:layout_constraintTop_toBottomOf="@+id/btn_two_part_big_horizontal"
-            tools:layout_editor_absoluteX="16dp" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_two_part_big_horizontal" />
 
         <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_three_part_big_bottom_part"
             style="@style/Widget.MaterialComponents.Button.TextButton.MaterialBtnStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/three_category"
             android:onClick="@{()->fragment.sendResult(UiStyle.THREE_BIG_BOTTOM)}"
+            android:text="@string/three_category"
             app:icon="@drawable/ic_three_part_big_bottom_part"
             app:layout_constraintBottom_toTopOf="@+id/btn_four_category"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_three_part_big_top_part" />
 
         <com.google.android.material.button.MaterialButton
@@ -99,10 +107,12 @@
             style="@style/Widget.MaterialComponents.Button.TextButton.MaterialBtnStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="@{()->fragment.sendResult(UiStyle.FOUR_IN_ROW)}"
             android:text="@string/four_category"
             app:icon="@drawable/ic_category"
-            android:onClick="@{()->fragment.sendResult(UiStyle.FOUR_IN_ROW)}"
             app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/btn_three_part_big_bottom_part" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

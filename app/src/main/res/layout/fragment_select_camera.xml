@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_rounded_8"
+        android:layout_margin="16dp"
+        android:elevation="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:layout_margin="16dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/BtnGradientGreenStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/buy_and_add_camera"
+            android:background="@drawable/ripple_bg_gray_gradient"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:ellipsize="end"
+            android:drawableStart="@drawable/ic_exit"
+            android:paddingStart="16dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/BtnGradientGreenStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/close"
+            android:elevation="3dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="8dp"
+            />
+
+    </LinearLayout>
+</layout>

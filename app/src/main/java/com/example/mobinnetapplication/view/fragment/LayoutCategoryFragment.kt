@@ -20,6 +20,7 @@ class LayoutCategoryFragment : BottomSheetDialogFragment() {
     ): View {
         binding= DataBindingUtil.inflate(inflater, R.layout.fragment_category_dialog,container,false)
         binding.fragment=this
+        dialog?.window?.setLayout(200, -1)
         return binding.root
     }
 
