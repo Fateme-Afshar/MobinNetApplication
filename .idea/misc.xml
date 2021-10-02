@@ -49,7 +49,9 @@
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ic_red_eye.xml" value="0.206" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ic_rewind_button.xml" value="0.2035" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ic_search.xml" value="0.2035" />
+        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ic_share.xml" value="0.201" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ic_sign_up.xml" value="0.203" />
+        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ic_trashkan.xml" value="0.201" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/ic_two_part_big_vertical.xml" value="0.1935" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/item_home.xml" value="0.203" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/drawable/line.xml" value="0.206" />
@@ -73,7 +75,7 @@
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/fragment_sign_up.xml" value="0.176" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/fragmet_home.xml" value="0.2557291666666667" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/inside_search_layout.xml" value="0.2557291666666667" />
-        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/item_cloudy_space.xml" value="0.4" />
+        <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/item_cloudy_space.xml" value="0.176" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/layout/item_select_camera.xml" value="0.2557291666666667" />
         <entry key="..\:/Users/Fateme/AndroidStudioProjects/MobinNetApplication/app/src/main/res/menu/main_menu.xml" value="0.2520833333333333" />
       </map>
