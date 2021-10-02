@@ -16,6 +16,18 @@
         <item name="android:textStyle">bold</item>
     </style>
 
+    <style name="Theme.MyTheme" parent="Theme.AppCompat">
+        <item name="searchViewStyle">@style/MySearchViewStyle</item>
+    </style>
+    <style name="MySearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <item name="android:background">@drawable/bg_search_view</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+        <item name="queryHint">@string/search</item>
+        <item name="iconifiedByDefault">false</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="iconGravity">textStart</item>
+    </style>
+
     <style name="BtnGradientGreenStyle">
         <item name="android:background">@drawable/ripple_btn</item>
         <item name="android:textColor">@color/white</item>

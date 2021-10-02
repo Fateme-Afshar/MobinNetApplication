@@ -9,6 +9,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/ripple_light"
         app:icon="@drawable/ic_camera"
+        app:iconTint="#045453"
         android:text="@string/camera"
+        android:textColor="#045453"
         />
 </layout>

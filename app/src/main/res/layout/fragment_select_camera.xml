@@ -13,9 +13,9 @@
         android:orientation="vertical">
 
         <androidx.appcompat.widget.SearchView
+            style="@style/MySearchViewStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="start"
             android:layout_margin="16dp" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -24,18 +24,22 @@
             android:layout_height="wrap_content" />
 
         <androidx.appcompat.widget.AppCompatButton
-            style="@style/BtnGradientGreenStyle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/buy_and_add_camera"
             android:background="@drawable/ripple_bg_gray_gradient"
-            android:elevation="3dp"
+            android:elevation="10dp"
             android:clickable="true"
             android:focusable="true"
             android:ellipsize="end"
+            android:maxLines="1"
+            android:padding="16dp"
+            android:drawablePadding="16dp"
             android:drawableStart="@drawable/ic_exit"
-            android:paddingStart="16dp"
             android:layout_marginBottom="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="@color/white"
             />
 
         <androidx.appcompat.widget.AppCompatButton
