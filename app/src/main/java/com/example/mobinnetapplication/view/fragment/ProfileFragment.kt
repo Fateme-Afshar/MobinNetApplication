@@ -17,6 +17,7 @@ class ProfileFragment : BaseFragment(){
         savedInstanceState: Bundle?
     ): View {
         binding=DataBindingUtil.inflate(inflater, R.layout.fragment_profile,container,false)
+        callbacks.itemVisibility(0)
         return binding.root
     }
 }

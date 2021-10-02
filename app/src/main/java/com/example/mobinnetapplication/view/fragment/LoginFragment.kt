@@ -23,10 +23,10 @@ class LoginFragment : BaseFragment() {
 
     private fun onClicks() {
       binding.btnSignUp.setOnClickListener {
-            callbacks.openSignUpFragment()
+            callbacks.openFragment(R.id.action_des_login_to_des_sign_up)
         }
         binding.btnSubmit.setOnClickListener {
-            callbacks.openMainCloudySpaceFragment()
+            callbacks.openFragment(R.id.action_des_login_to_des_home_page)
         }
     }
 }

@@ -21,6 +21,7 @@ class MainCloudySpaceFragment : BaseFragment() {
         binding =
             DataBindingUtil.inflate(inflater, R.layout.fragment_main_cloudy_space, container, false)
         setupAdapter()
+        callbacks.itemVisibility(1)
         return binding.root
     }
 

@@ -21,6 +21,7 @@
     <string name="three_category">سه تایی</string>
     <string name="four_category">چهار تایی</string>
     <string name="name">نام و نام خانوادگی</string>
+    <string name="test">فاطمه افشار</string>
     <string name="email">ایمیل</string>
     <string name="phone">موبایل</string>
     <string name="national_code">کد ملی</string>
@@ -30,4 +31,5 @@
     <string name="buy_and_add_camera">خرید بسته و اضافه کردن دوربین</string>
     <string name="camera">دوربین</string>
     <string name="search">جستجو</string>
+    <string name="organize">سازمان</string>
 </resources>

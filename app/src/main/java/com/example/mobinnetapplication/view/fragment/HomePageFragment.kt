@@ -23,6 +23,7 @@ class HomePageFragment : BaseFragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.fragment_home_page, container, false)
         binding.fragment = this
         receiveResult()
+        callbacks.itemVisibility(3)
         return binding.root
     }
 

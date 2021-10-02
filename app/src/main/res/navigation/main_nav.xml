@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/des_login">
+
+    <fragment
+        android:id="@+id/des_sign_up"
+        android:name="com.example.mobinnetapplication.view.fragment.SignUpFragment"
+        android:label="SignUpFragment"
+        tools:layout="@layout/fragment_sign_up"/>
+
+    <fragment
+        android:id="@+id/des_login"
+        android:name="com.example.mobinnetapplication.view.fragment.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_des_login_to_des_sign_up"
+            app:destination="@id/des_sign_up"
+            app:enterAnim="@anim/fade" />
+
+        <action
+            android:id="@+id/action_des_login_to_des_home_page"
+            app:destination="@id/des_home_page"
+            app:enterAnim="@anim/fade"
+            app:popUpTo="@id/des_login"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/des_profile"
+        android:name="com.example.mobinnetapplication.view.fragment.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile"
+        />
+
+    <fragment
+        android:id="@+id/des_cloudy_space"
+        android:name="com.example.mobinnetapplication.view.fragment.CloudySpaceFragment"
+        android:label="CloudySpaceFragment"
+        tools:layout="@layout/fragment_cloudy_space"
+        />
+
+    <fragment
+        android:id="@+id/des_home_page"
+        android:name="com.example.mobinnetapplication.view.fragment.HomePageFragment"
+        android:label="HomePageFragment"
+        tools:layout="@layout/fragment_home_page"
+        />
+
+    <fragment
+        android:id="@+id/des_main_cloudy_space"
+        android:name="com.example.mobinnetapplication.view.fragment.MainCloudySpaceFragment"
+        android:label="MainCloudySpaceFragment"
+        tools:layout="@layout/fragment_main_cloudy_space"
+        />
+</navigation>
