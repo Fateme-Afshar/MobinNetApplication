@@ -11,15 +11,15 @@
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/imv_logo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
             android:adjustViewBounds="true"
             android:src="@drawable/mobinio"
             android:layout_marginTop="16dp"
-            app:layout_constraintBottom_toTopOf="@+id/imv_phone"
+            app:layout_constraintBottom_toTopOf="@id/guideline_top"
             app:layout_constraintEnd_toEndOf="@+id/imv_phone"
             app:layout_constraintStart_toStartOf="@+id/imv_phone"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"  />
 
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_left"
@@ -125,15 +125,15 @@
             android:elevation="6dp"
             android:focusable="true"
             android:clickable="true"
-            android:layout_marginTop="24dp"
+            android:layout_marginTop="8dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/checkbox" />
 
         <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/appCompatImageView2"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
             android:adjustViewBounds="true"
             android:src="@drawable/ic_finger"
